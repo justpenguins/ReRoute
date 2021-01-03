@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>deCodeCongestion Main</title>
+        <script src="UserRequest.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a class="active" href="test.html">Home</a>
+            <a href="report.html">Report a Problem</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <div class="main" style="padding-left: 60px; padding-bottom: 35px;">
+            <h1 id = "mainHeader">Transfer</h1>
+
+            <form class="rerouteRequest">
+                Starting point:<br><br>
+                    <input style="height: 30px; width: 300px; font-size: 20px;" type="text" name="Start" id="startPoint"><br><br>
+                Destination:<br><br>
+                    <input style="height: 30px; width: 300px; font-size:20px;" name="End" id="endPoint"><br><br>
+            </form>
+            <button style="width:300px; height: 30px; font-size: 20px;" class="submit_button">Find My Route</button>
+
+        </div>
+
+        <h3 style="padding-left:60px;">Recommended Routes:</h3>
+
+        <div class="results" style="padding-left: 60px; padding-bottom: 10px; padding-top: 10px; background-color: lightgray;">
+
+            <div class="response">
+                <p id="route1"></p>
+                <p id="route2"></p>
+                <p id="route3"></p>
+            </div>
+
+        </div>
+
+        <div class="footer" style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/gchang37/deCodeCongestion/master/Reroute%20Logo.jpg" width="400px;" >
+        </div>
+
+
+
+    </body>
+</html>
